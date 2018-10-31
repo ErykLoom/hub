@@ -1,0 +1,18 @@
+<div class="header__gradient"></div>
+<div class="header__wrapper">
+  {% include '../components/content/logo/logo.twig' with {
+  headline: "10 - 11 APR '19",
+  content: 'STATION BERLIN',
+  } %}
+  <div class="header__buttons">
+    {% include '../components/navigation/button/button.twig' with {
+      content: 'Tickets',
+      border: true,
+    } %}
+    {% include '../components/navigation/button/button.twig' with {
+      content: 'Partner',
+      border: true,
+    } %}
+    {% include '../components/navigation/menu/menu.twig' %}
+  </div>
+</div>

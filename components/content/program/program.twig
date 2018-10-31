@@ -1,0 +1,46 @@
+<div class="program">
+  <div class="program--top">
+    {% include '../headline/headline.twig' with {
+    content: 'Program 2019',
+    } %}
+    <div class="program--top__right">
+      {% include '../../navigation/button/button.twig' with {
+        content: 'Full program',
+        class: 'program',
+      } %}
+      {% include '../../navigation/button/button.twig' with {
+        content: 'Selected programs',
+        class: 'program',
+      } %}
+    </div>
+  </div>
+  <div class="program--center">
+    <div class="program--center__left">
+      {% include '../../navigation/button/button.twig' with {
+        content: '10. April 2019',
+        class: 'date',
+      } %}
+      {% include '../../navigation/button/button.twig' with {
+        content: '11. April 2019',
+        class: 'date',
+      } %}
+    </div>
+    <div class="program--center__right">
+      {% include '../../navigation/button/button.twig' with {
+        content: 'Choose topic',
+        class: 'select',
+      } %}
+      {% include '../../navigation/button/button.twig' with {
+        content: 'Choose stage',
+        class: 'select',
+      } %}
+      {% include '../../navigation/button/button.twig' with {
+        content: 'Search',
+        search: true,
+      } %}
+    </div>
+  </div>
+  <div class="program--bottom">
+  {% include '../../navigation/time-line/time-line.twig' %}
+  </div>
+</div>

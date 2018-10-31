@@ -1,0 +1,25 @@
+.time-line
+  display: flex
+  width: 996px
+  margin: 40px auto
+  padding: 0 2px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35)
+
+  &__button
+    height: 40px
+    width: 110px
+    text-align: center
+    line-height: 40px
+    color: white
+    opacity: 0.35
+    margin-bottom: 3px
+
+  &__button:hover > &__border
+    opacity: 1
+    height: 3px
+    width: 100px
+    background: white
+    transform: perspective(10px) rotateX(10deg)
+
+  &__button:hover
+    opacity: 1

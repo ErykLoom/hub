@@ -1,0 +1,14 @@
+$colors: (
+  purple-light: #3d2360,
+  fire: #ff525d,
+  water: #448cff,
+  lilac: #ad43ff,
+  toxic: #0ada8f,
+  sun: #ffcf46,
+  sky: #4ce2ff,
+  candy: #ff4885,
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}

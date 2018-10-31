@@ -1,0 +1,23 @@
+{% if border %}
+  <a class="button button__border" href="#">
+    <div class="button__border-wrapper">
+      <div class="button__border-top"></div>
+      <div>{{ content }}</div>
+      <div class="button__border-bot"></div>
+    </div>
+  </a>
+{% elseif submit %}
+  <a class="button button__submit" href="#">
+    <div class="button__submit-wrapper">
+      <div class="button__submit-top"></div>
+      <div>{{ content }}</div>
+      <div class="button__submit-bot"></div>
+    </div>
+  </a>
+{% elseif search %}
+    <a class="button button__search" href="#"><div>{{ content }}</div><div>&#x1f50d;</div></a>
+{% elseif email %}
+    <a class="button button__email" href="#"><div>{{ content }}</div></a>
+{% else %}
+    <a class="button{% if class %} button__{{ class }}{% endif %}" href="#">{{ content }}</a>
+{% endif %}

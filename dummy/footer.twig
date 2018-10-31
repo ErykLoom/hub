@@ -1,0 +1,25 @@
+{% include '../components/navigation/back-to-top/back-to-top.twig' %}
+<div class="footer-wrapper">
+  <div class="footer__logo"><a href="#"><img src="../img/bitkom.png"></a></div>
+  {% include '../components/content/text-box/text-box.twig' with {
+  header: 'Bitkom e.V.',
+  content: 'in cooperation with Bitkom Servicegesellschaft mbH Albrechtstr. 10, 10117 Berlin',
+  } %}
+  {% include '../components/content/text-box/text-box.twig' with {
+    header: 'Bitkom Event',
+    content: 'Explore more Bitkom Events around Germany',
+  } %}
+  <div class="footer__newsletter">
+    <div class="footer__newsletter__header">All news by email</div>
+    <div class="footer__newsletter__wrapper">
+      {% include '../components/navigation/button/button.twig' with {
+        content: 'Enter your email adress',
+        email: true,
+      } %}
+      {% include '../components/navigation/button/button.twig' with {
+        content: 'Sumbit now',
+        submit: true,
+      } %}
+    </div>
+  </div>
+</div>

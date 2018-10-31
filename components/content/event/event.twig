@@ -1,0 +1,20 @@
+<div class="event event--{{ color }}">
+  <div class="event__info">
+    <div class="event__info--wrapper-outside">
+      <div>
+        <input type="checkbox" class="event-checkbox" id="event-checkbox">
+      </div>
+      <div class="event__info--wrapper-inside">
+        <div class="event__info__time">{{ starttime }} - {{ endtime }}</div>
+        <div class="event__info__topic">{{ topic }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="event__content">{{ content }}</div>
+  <div class="event__host">
+    <div>{{ host }}</div>
+    {% if host2 %}<div>{{ host2 }}</div>{% endif %}
+    {% if host3 %}<div>{{ host3 }}</div>{% endif %}
+  </div>
+  <div class="event__location">{{ location }}</div>
+</div>
